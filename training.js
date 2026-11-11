@@ -28,3 +28,5 @@ document.getElementById('page-content').addEventListener('click',function(e){
   if(b.dataset.action==='bcm-week'){t.week++;t.sessions=0;t.fatigue=Math.max(0,t.fatigue-25);toast('Semana '+t.week+' iniciada.');}
   saveCareer();render();
 });
+const originalEnsureProgress = ensureProgress;
+ensureProgress = function(){ originalEnsureProgress(); if(career && typeof career.budget !== 'number') career.budget=1500; if(career && career.training && typeof career.training.total !== 'number') career.training.total=0; if(career && career.attributes){ for(const k of ['tecnica','fisico','mental']) if(typeof career.attributes[k] !== 'number') career.attributes[k]=45; } };
