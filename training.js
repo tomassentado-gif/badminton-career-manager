@@ -30,3 +30,5 @@ document.getElementById('page-content').addEventListener('click',function(e){
 });
 function ensureProgress(){ if(!career)return; if(!career.attributes)career.attributes={tecnica:45,fisico:45,mental:45}; if(!career.training)career.training={fatigue:0,sessions:0,week:1,total:0}; if(typeof career.training.fatigue!=='number')career.training.fatigue=0; if(typeof career.training.sessions!=='number')career.training.sessions=0; if(typeof career.training.week!=='number')career.training.week=1; if(typeof career.training.total!=='number')career.training.total=0; if(!career.history)career.history=[]; if(typeof career.budget!=='number')career.budget=1500; for(const k of ['tecnica','fisico','mental'])if(typeof career.attributes[k]!=='number')career.attributes[k]=45; }
 if(career){ensureProgress();saveCareer();}
+
+render();
