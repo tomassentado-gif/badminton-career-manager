@@ -1,7 +1,7 @@
 const originalPageContent = pageContent;
 pageContent = function(){
-  if(activePage !== 'treino') return originalPageContent();
   ensureProgress();
+  if(activePage !== 'treino') return originalPageContent();
   const a=career.attributes, t=career.training;
   const card=(key,label,desc)=>'<div class="card"><div class="tag">'+label+'</div><h3>'+desc+'</h3><div class="list-row"><span>Desenvolve</span><strong>'+key+' +3</strong></div><button class="btn train-btn" data-training="'+key+'" '+(t.sessions>=3?'disabled':'')+'>Realizar sessão</button></div>';
   return '<div class="welcome"><div><div class="tag">PLANO DE DESENVOLVIMENTO · SEMANA '+t.week+'</div><h1>Centro de treino</h1><p>Escolhe o foco de cada sessão e gere a recuperação do atleta.</p></div><span class="pill">'+t.sessions+'/3 sessões</span></div>'
