@@ -7,3 +7,5 @@
 .life-actions{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:13px}.life-actions .session-card{min-height:190px}.life-actions .session-card h3{margin-top:4px}.life-actions .btn{margin-top:auto}.life-note{display:flex;flex-direction:column;align-items:flex-start}.life-note p{line-height:1.8}.life-count{margin-top:auto;padding-top:18px;color:var(--lime);font-size:11px;font-weight:700}
 @media(max-width:950px){.life-actions{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:650px){.life-actions{grid-template-columns:1fr 1fr}.life-actions .session-card{padding:15px;min-height:200px}}
+
+.rank-number{width:35px;color:var(--cyan);font:800 13px Manrope}.rank-player{background:#1b3545;margin:0 -12px;padding:13px 12px;border-radius:8px}.rank-player b{color:var(--lime)}.rank-player .tag,.tag{font-size:9px;color:var(--lime);border:1px solid #526d47;border-radius:20px;padding:5px 8px}
