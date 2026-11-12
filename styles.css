@@ -12,3 +12,32 @@
 
 .news-item{padding:17px 0;border-bottom:1px solid var(--line)}.news-item:last-child{border:0}.news-item b{font:700 14px Manrope}.news-item p{margin:6px 0 0;color:var(--muted);font-size:11px;line-height:1.7}.news-meta{font-size:9px;letter-spacing:1.3px;color:var(--cyan);margin-bottom:7px}.objective-state{width:28px;height:28px;display:grid;place-items:center;border-radius:50%;background:#1b3545;color:var(--lime);font-weight:800}.tag{white-space:nowrap}.session-grid{grid-template-columns:repeat(3,minmax(0,1fr))}@media(max-width:950px){.session-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:650px){.session-grid{grid-template-columns:1fr}}
 .tactic-panel{margin-bottom:14px}.tactic-options{display:flex;gap:9px;flex-wrap:wrap;margin-top:13px}.tactic-panel p{max-width:700px;line-height:1.6}
+/* Navigation and sidebar */
+.sidebar{min-height:100vh;height:100vh;position:sticky;top:0;overflow-y:auto;scrollbar-width:thin;scrollbar-color:#294257 transparent}
+.sidebar nav{gap:4px}
+.nav-item{min-height:40px;padding:9px 11px;line-height:1.25;white-space:normal}
+.nav-item span{flex:0 0 19px}
+.sidebar-bottom{display:flex;align-items:center;gap:7px;flex-wrap:nowrap;white-space:nowrap;margin-top:auto}
+.sidebar-bottom .save-label{margin-left:auto;float:none}
+@media(max-height:760px){.brand{padding-bottom:20px}.nav-item{min-height:36px;padding:7px 10px}.sidebar{padding-top:18px;padding-bottom:14px}}
+/* Staff, events and national-team progression */
+.staff-card{display:flex;align-items:center;gap:14px;padding:16px 0;border-bottom:1px solid var(--line)}
+.staff-card:last-child{border:0}
+.staff-avatar{width:42px;height:42px;flex:0 0 42px;border-radius:50%;display:grid;place-items:center;background:#1d3548;color:var(--lime);font-weight:800}
+.staff-info{flex:1;min-width:150px}
+.staff-info>b,.staff-info>small{display:block}
+.staff-info>small{color:var(--muted);font-size:11px;margin-top:4px}
+.staff-relation{margin-top:9px;max-width:240px}
+.staff-relation>span{font-size:10px;color:var(--muted)}
+.staff-relation .track{margin-top:5px}
+.staff-actions{display:flex;gap:7px;flex-wrap:wrap}
+.event-panel{border-color:#49617a;background:linear-gradient(120deg,#172b3c,#101c2a)}
+.event-panel>p{color:var(--muted);line-height:1.7}
+.event-choices{display:flex;gap:9px;flex-wrap:wrap;margin-top:18px}
+.selection-panel{margin-bottom:14px}
+.selection-panel p{max-width:760px;line-height:1.6}
+.selection-status{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-top:10px}
+.selection-status b{color:var(--lime);font-size:12px}
+@media(max-width:760px){.sidebar{position:relative;height:auto;min-height:0;width:100%;overflow:visible}.staff-card{align-items:flex-start;flex-wrap:wrap}.staff-actions{width:100%;padding-left:56px}.sidebar-bottom{display:none}}
+
+.event-alert{display:flex;align-items:center;justify-content:space-between;gap:18px;margin:0 0 18px;border-color:#49617a}.event-alert h2{margin:7px 0;font:700 16px Manrope}.event-alert p{margin:0;color:var(--muted);font-size:11px}.event-alert .btn{flex-shrink:0}@media(max-width:650px){.event-alert{align-items:flex-start;flex-direction:column}}
