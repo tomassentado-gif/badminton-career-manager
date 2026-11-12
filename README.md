@@ -5,11 +5,14 @@ A browser-based badminton career simulator. Create your player, train, enter tou
 ## Current features
 
 - Player creation (name, age, country, club, discipline and dominant hand)
-- Training sessions for technique, physical preparation and mental performance
+- Six focused training areas: general technique, net play, serve/return, footwork, physical preparation and mental performance
 - Training load and fatigue management, with recovery and weekly progression
-- Regional, national, junior and senior international tournaments
+- Season calendar with scheduled regional, national, junior and senior tournaments
+- Multi-round tournament simulation with match-by-match score summaries
 - Simulated match outcomes based on player development, form, energy and fatigue
 - Ranking points, career results, prize money and competition costs
+- Club offers, contracts, weekly support and coach relationship
+- Dynamic career objectives and a weekly badminton news feed
 - Personal-life system: school, friends, family, wellbeing, stress and weekly choices\n- Living junior circuit with fictional rivals who train, compete, age and gain ranking points autonomously\n- Career history and automatic local save in the browser
 
 ## Run locally
