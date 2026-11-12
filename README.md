@@ -10,7 +10,7 @@ A browser-based badminton career simulator. Create your player, train, enter tou
 - Regional, national, junior and senior international tournaments
 - Simulated match outcomes based on player development, form, energy and fatigue
 - Ranking points, career results, prize money and competition costs
-- Personal-life system: school, friends, family, wellbeing, stress and weekly choices\n- Career history and automatic local save in the browser
+- Personal-life system: school, friends, family, wellbeing, stress and weekly choices\n- Living junior circuit with fictional rivals who train, compete, age and gain ranking points autonomously\n- Career history and automatic local save in the browser
 
 ## Run locally
 
